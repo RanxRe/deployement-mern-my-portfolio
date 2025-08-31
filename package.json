@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node server.js",      // or index.js (your backend entry file)
-    "server": "nodemon server.js",  // optional for local dev
+    "start": "node server.js",      
+    "server": "nodemon server.js",  
     "client": "npm run dev --prefix client",
     "client:build": "npm run build --prefix client",
     "client:install": "npm install --prefix client",
