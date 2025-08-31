@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",      // or index.js (your backend entry file)
+    "server": "nodemon server.js",  // optional for local dev
+    "client": "npm run dev --prefix client",
+    "client:build": "npm run build --prefix client",
+    "client:install": "npm install --prefix client",
+    "build": "npm run client:install && npm run client:build"
   },
   "author": "Ranjeet Kumar Mahato",
   "license": "ISC",
